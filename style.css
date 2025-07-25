@@ -431,3 +431,179 @@ footer > .container {
 }
 
 /* ? Footer Section Ending */
+
+
+
+/* Responsive Design */
+/* ? For Mobile */
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 56.25%;
+  }
+  .navbar li:nth-child(-n + 3) a,
+  .badge-img {
+    display: none;
+  }
+  .container {
+    width: 100vw;
+  }
+  .navbar {
+    margin: 1.5rem;
+    justify-content: space-between;
+    
+    & .logo {
+      width: calc(100vw / 4);
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+  .nav-links {
+    gap: 0;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    margin: 1.5rem 0 6rem;
+  }
+  .hero-content,
+  .hero-image,
+  .plants-lover-content,
+  .plants-lover-image {
+    width: 100%;
+  }
+  .hero-content {
+    padding: 2.8rem 1.5rem;
+    text-align: justify;
+  }
+  .hero-title,
+  .plants-lover-title,
+  .plant-content-title {
+    font-size: 2.65rem;
+    /* 24px */
+  }
+  .plants-lover {
+    margin: 5rem 1.5rem 15rem;
+  }
+  .cards {
+    margin: 0 1.5rem;
+  }
+  .card-title,
+  .price,
+  .card .btn-primary {
+    font-size: 1.78rem;
+    /* 16px */
+  }
+  .hero-description,
+  .plant-content-description,
+  .plants-lover-description {
+    font-size: 1.56rem;
+    /* 14px */
+  }
+  .plants-lover-description {
+    padding: 1.5rem;
+  }
+  .plants-lover-description ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 1rem;
+  }
+  .plants-lover-description ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+    text-indent: 0;
+  }
+  .plant-content-description {
+    margin: 1.5rem 2.8rem;
+  }
+  .grid-col-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plants-lover {
+    flex-direction: column;
+    /* padding: 2.8rem 1.5rem; */
+    text-align: justify;
+  }
+  .plants-lover-title {
+    margin-bottom: 0;
+  }
+  .latest-deal-cards {
+    grid-template-areas:
+      "ldc1"
+      "ldc2"
+      "ldc3";
+    gap: 2rem;
+    padding: 0 1.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .latest-deal-card-3 .content {
+    & h4 {
+      font-size: 2rem;
+    }
+    & button {
+      font-size: 1.5rem;
+    }
+  }
+
+  .latest-deal-card-1 .content,
+  .latest-deal-card-2 .content,
+  .latest-deal-card-3 .content {
+    & button {
+      margin-top: 2rem;
+    }
+  }
+
+  .join-section {
+    aspect-ratio: 1.4 / 1;
+  }
+  .join-section-content {
+    max-width: 82%;
+    width: 100%;
+  }
+  main > section:nth-child(4).plant-content {
+    margin-bottom: 5rem;
+  }
+  .join-section-title {
+    font-size: 2.22rem;
+  }
+  .join-section-search > button {
+    padding: 0.9rem 1rem;
+    
+  }
+  .join-section-search > input {
+    padding: 0.9rem 1rem;
+  }
+  footer > .container {
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 0;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    
+    & .footer-description {
+      font-size: 1.78rem;
+      line-height: 2.7rem;
+    }
+  }
+  .footer-section {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 1rem 1rem;
+    text-align: left;
+  }
+  .footer-link-1 li,
+  .footer-link-2 li {
+    padding: 1rem 1rem;
+  }
+  .footer-link-icon {
+    justify-content: flex-start;
+  }
+  .footer-link-icon img {
+    margin-left: 0;
+    padding: 2rem 2.2rem 0 1rem;
+  }
+}
